@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarBot</title> <!-- Updated title -->
+    <link rel="icon" href="https://i.ibb.co/F57MGN0/ai-1.png" type="image/png">
+    <!-- Using Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Basic Styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="https://i.ibb.co/F57MGN0/ai-1.png" alt="Chatbot Logo">
+        ScholarBot <!-- Added Name -->
+        <div id="statusIndicator" class="status-indicator">Initializing...</div>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chatContainer" class="chat-container">
+        <!-- Initial message can be added via JS -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <input type="text" id="text" placeholder="Ask about scholarships..." autocomplete="off" required>
+      <!-- Hidden file input -->
+      <input type="file" id="fileInput" style="display: none;" accept="image/*">
+      <!-- Attachment button triggers file input -->
+      <button id="attachment" title="Attach Image (Optional)">
+          <i class="fas fa-paperclip"></i>
+      </button>
+      <!-- Send button -->
+      <button id="send" title="Send Message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+       <!-- Stop Button (initially hidden) -->
+       <button id="stop" title="Stop Generating" style="display: none;">
+            <i class="fas fa-stop"></i>
+       </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
